@@ -3,7 +3,6 @@ class Solution:
         count=10001
         for i in words:
             flag=True
-            # print(i)
             k=i
             for j in licensePlate:
                 print(i, j, j.isnumeric() or j==" ", k)
@@ -15,7 +14,6 @@ class Solution:
                 else:
                     flag=False
                     break
-            print(flag, i,k)
             if flag==True and len(i)<count:
                 count=len(i)
                 output=i
