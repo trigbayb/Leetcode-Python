@@ -9,5 +9,8 @@ class Solution:
         while head:
             lists.append(head.val)
             head=head.next
-        return lists[::-1]==lists
+        for i in range(len(lists)):
+            if lists[i]!=lists[-i-1]:
+                return False
+        return True
             
